@@ -20,9 +20,9 @@ export default function Content() {
               href={blogUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 border-b border-ink pb-0.5 text-sm font-semibold transition-colors hover:border-brand hover:text-brand"
+              className="group inline-flex items-center gap-1.5 border-b border-ink pb-0.5 text-sm font-semibold transition-colors hover:border-brand hover:text-brand"
             >
-              블로그 전체 보기 <span aria-hidden>→</span>
+              블로그 전체 보기 <span aria-hidden className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
             </a>
           </Reveal>
         </div>
@@ -43,7 +43,7 @@ export default function Content() {
                 </div>
 
                 <div className="min-w-0 flex-1">
-                  <span className="inline-block rounded-full bg-brand-soft px-3 py-1 text-xs font-semibold text-brand">
+                  <span className="inline-block rounded-none bg-brand-soft px-3 py-1 text-xs font-semibold text-brand">
                     {p.category}
                   </span>
                   <h3 className="mt-3 line-clamp-2 text-lg font-bold transition-colors group-hover:text-brand sm:text-xl">
@@ -54,7 +54,7 @@ export default function Content() {
 
                 <span
                   aria-hidden
-                  className="hidden shrink-0 text-xl text-line transition-colors group-hover:text-brand sm:block"
+                  className="hidden shrink-0 text-xl text-line transition-all duration-200 group-hover:translate-x-1 group-hover:text-brand sm:block"
                 >
                   →
                 </span>

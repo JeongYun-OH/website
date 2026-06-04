@@ -16,7 +16,7 @@ import type {
 export const site = {
   name: "오정윤",
   role: "풀퍼널 그로스 마케터",
-  url: "https://example.com",
+  url: "https://website-kappa-eight-55.vercel.app",
   description:
     "중소기업의 GTM 그로스를 풀퍼널로 설계하고, AI로 실행 환경까지 구축하는 마케터.",
   email: "ojy9344@gmail.com",
@@ -100,7 +100,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     date: "2024.10 – 26.02",
-    duration: "Goorm",
+    duration: "goorm",
     title: "구름",
     description: "IT 교육 부트캠프 모집 마케팅 운영",
   },
@@ -109,7 +109,7 @@ export const timeline: TimelineItem[] = [
 export const projects: Project[] = [
   {
     id: "kakaotech-bootcamp",
-    company: "GOORM",
+    company: "goorm",
     period: "2024.11 – 2025.01",
     title: "카카오테크 부트캠프 2회차 수강생 모집",
     summary:
@@ -136,7 +136,7 @@ export const projects: Project[] = [
   },
   {
     id: "fintech-internship",
-    company: "GOORM",
+    company: "goorm",
     period: "2025.06 – 2026.02",
     title: "핀테크 인턴십 코스 3~5회차 수강생 모집",
     summary:

@@ -50,7 +50,7 @@ function ProjectCard({
       </div>
 
       <div className="flex flex-1 flex-col p-7">
-        <span className="text-xs font-semibold uppercase tracking-[0.18em] text-brand">
+        <span className="text-xs font-semibold tracking-[0.18em] text-white/50">
           {project.company}
         </span>
         <h3 className="mt-3 text-xl font-bold text-white sm:text-2xl">
@@ -60,7 +60,7 @@ function ProjectCard({
           {project.summary}
         </p>
         <span className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-white/70 transition-colors group-hover:text-brand">
-          더 알아보기 <span aria-hidden>→</span>
+          더 알아보기 <span aria-hidden className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
         </span>
       </div>
     </button>
@@ -71,10 +71,10 @@ export default function Projects() {
   const [selected, setSelected] = useState<Project | null>(null);
 
   return (
-    <section id="work" className="scroll-mt-16 bg-dark py-24 sm:py-32">
+    <section id="work" className="scroll-mt-16 bg-dark py-28 sm:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-bright">
             Work
           </p>
           <h2 className="max-w-2xl text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
@@ -114,7 +114,7 @@ export default function Projects() {
                     {s.items.map((it) => (
                       <span
                         key={it}
-                        className="rounded-full border border-white/15 bg-white/[0.04] px-3 py-1.5 text-sm text-white/80"
+                        className="rounded-none border border-white/15 bg-white/[0.04] px-3 py-1.5 text-sm text-white/80"
                       >
                         {it}
                       </span>

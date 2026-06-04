@@ -70,7 +70,7 @@ export default function ProjectModal({ project, onClose }: Props) {
               ✕
             </button>
 
-            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-brand">
+            <span className="text-xs font-semibold tracking-[0.18em] text-muted">
               {project.company} · {project.period}
             </span>
             <h3
