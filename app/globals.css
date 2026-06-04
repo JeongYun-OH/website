@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import "pretendard/dist/web/variable/pretendardvariable.css";
+
+@theme {
+  --color-bg: #ffffff;
+  --color-ink: #0a0a0a;
+  --color-brand: #2d3bff;
+  --color-brand-soft: #e9ebff;
+  --color-dark: #0b0b10;
+  --color-dark-soft: #16161e;
+  --color-muted: #6b6b72;
+  --color-line: #e6e6ea;
+
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", sans-serif;
+
+  --text-display: clamp(2.75rem, 6vw, 5.25rem);
+  --text-display--line-height: 1.05;
+  --text-display--letter-spacing: -0.03em;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* 스크롤 시 섹션 단위로 넘어가는 느낌 (경계 근처에서만 정렬, 긴 섹션은 자유 스크롤) */
+  scroll-snap-type: y proximity;
+}
+
+/* 최상위 섹션과 푸터를 스냅 지점으로. scroll-mt-16(스크롤 마진)이 고정 네비 높이를 보정 */
+main > section,
+footer {
+  scroll-snap-align: start;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* 형광 마커 스타일 강조 (about colleague 레퍼런스) */
+.marker {
+  background: linear-gradient(transparent 60%, var(--color-brand-soft) 60%);
+  padding: 0 0.1em;
+  font-weight: 700;
+}
+
+.marker-underline {
+  box-shadow: inset 0 -0.5em 0 var(--color-brand-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+  }
+}
