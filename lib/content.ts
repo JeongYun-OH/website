@@ -18,7 +18,7 @@ export const site = {
   role: "풀퍼널 그로스 마케터",
   url: "https://website-kappa-eight-55.vercel.app",
   description:
-    "중소기업의 GTM 그로스를 풀퍼널로 설계하고, AI로 실행 환경까지 구축하는 마케터.",
+    "풀퍼널 관점으로 성장을 그립니다. 방향을 잡고, 순서를 만들고, 시스템으로 실행하는 마케터.",
   email: "ojy9344@gmail.com",
 };
 
